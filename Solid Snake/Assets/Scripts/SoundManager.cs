@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    // create instance of gamemanager to get access project-wide
     private static SoundManager _instance;
 
     public static SoundManager Instance { get { return _instance; } }
@@ -22,17 +23,23 @@ public class SoundManager : MonoBehaviour
     }
 
     [SerializeField] private AudioClip GameOverClip;
+    [SerializeField] private AudioClip PickUpClip;
     private AudioSource source;
     void Start()
     {
         source = GetComponent<AudioSource>();
-     
-
     }
 
+    // Snake? Snake!? Snaaaake!
     public void PlayGameOverSound()
     {
         source.PlayOneShot(GameOverClip);
+    }
+
+    public void PlayPickUpClip()
+    {
+        source.PlayOneShot(PickUpClip);
+
     }
 
 }

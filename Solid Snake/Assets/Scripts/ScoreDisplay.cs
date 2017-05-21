@@ -7,9 +7,10 @@ public class ScoreDisplay : MonoBehaviour
 {
     [SerializeField] private Text DisplayScore;
 
+    // shows gained score
     void FixedUpdate()
     {
-        DisplayScore.text = "SCORE : "+ Points.amaunt;
+        DisplayScore.text = "SCORE : "+ GlobalVariables.Points;
     }
 
 }
