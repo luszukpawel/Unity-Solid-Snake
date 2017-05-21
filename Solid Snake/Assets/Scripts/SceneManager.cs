@@ -7,6 +7,19 @@ public class SceneManager : MonoBehaviour {
 
     public void StartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+        StartCoroutine(StartWithSound("GameScene"));
     }
+
+    public void BackToMenu()
+    {
+        StartCoroutine(StartWithSound("MainMenu"));
+    }
+
+    IEnumerator StartWithSound(string scene)
+    {
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(1.5f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
+    }
+
 }

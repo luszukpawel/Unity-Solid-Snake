@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -70,9 +67,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
@@ -84,11 +78,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CollisionBehaviour.cs" />
+    <Compile Include="Assets\CollisionManager.cs" />
+    <Compile Include="Assets\FoodBehaviour.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\BoardManager.cs" />
     <Compile Include="Assets\Scripts\BodyBehaviour.cs" />
     <Compile Include="Assets\Scripts\InstatiateTest.cs" />
     <Compile Include="Assets\Scripts\Mouvement.cs" />
+    <Compile Include="Assets\Scripts\Points.cs" />
     <Compile Include="Assets\Scripts\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\ScoreDisplay.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\metal_gear_solid(1)\READ ME!!!.txt" />
